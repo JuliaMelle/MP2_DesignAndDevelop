@@ -5,40 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="294dp"
-        android:layout_height="72dp"
-        android:text="WELCOME"
-        android:textAlignment="center"
-        android:textSize="25pt"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.324" />
-
-    <TextView
-        android:id="@+id/paragraph"
-
+    <LinearLayout
+        android:id="@+id/linearLayout_MAIN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="it's been waitin' for you"
-        android:textSize="8pt"
-        android:textStyle="italic"
-        android:textColor="@color/black"
+        android:orientation="vertical"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429" />
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="WELCOME"
+            android:textAlignment="center"
+            android:textSize="25pt"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
 
-    <Button
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.324" />
+
+        <TextView
+            android:id="@+id/paragraph"
+
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:text="it's been waitin' for you"
+            android:textColor="@color/black"
+            android:textSize="8pt"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.429" />
+
+        <Button
         android:id="@+id/nextButton"
         android:layout_width="348dp"
         android:layout_height="68dp"
@@ -56,4 +68,6 @@
 
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.55" />
+
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
